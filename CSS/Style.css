@@ -1,0 +1,770 @@
+* :not(.notran),:not(.notran):after,:not(.notran):before {
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+* {
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    outline:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+*,:before,:after {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.container {
+    max-width: 1500px!important;
+    margin: 0 auto!important;
+    overflow:hidden!important;
+    position: relative!important;
+
+}
+
+.clear {clear: both;}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,acronym,address,big,cite,code,del,dfn,em,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+    border:0;
+    font-family:inherit;
+    font-size:100%;
+    font-style:inherit;
+    color:inherit;font-weight:inherit;
+    margin:0;
+    outline:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+img {
+    max-width:100%;
+    position:relative;
+}
+
+body{font-family:'Cairo',sans-serif;font-size:14px;line-height:1.5em;visibility:visible!important;}
+body::-webkit-scrollbar{background-color:#ffffff!important;width:5px;}
+body::-webkit-scrollbar:hover{width: 15px;}
+body::-webkit-scrollbar-thumb{background:#8d3232;}
+body::-moz-selection{background:#d24949;color:#000000;}
+body * {user-select: none !important;}
+::-moz-selection{background:#d24949;color:#000000;}
+::selection{background:#d24949;color:#000000;}
+ul{list-style:none;padding:0;margin:0}
+p{line-height:2;font-size:12px;text-align:justify;}
+a , a:hover{text-decoration: none;color: inherit;background-color: transparent;}
+ul {list-style: none;}
+
+header#sp-header {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    height: 97px;
+}
+
+header#sp-header .widget {
+    overflow: initial;
+}
+
+.head-pz {
+    /* height: 97px; */
+    width: 100%;
+    position: fixed;
+    background: #ffffff;
+    box-shadow: 0 6px 18px 0 rgb(9 32 76 / 4%);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.par-tp {
+    display: block;
+    width: 100%;
+    clear: both;
+    height: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.floar {
+    color: #ffffff;
+    width: 77%;
+    float: right;
+    display: block;
+    clear: both;
+    position: relative;
+
+    padding: 0 15px 0 0;
+}
+
+.floar:before {
+    background: #00162e;
+    color: #ffffff;
+    width: 2000px;
+    display: block;
+    clear: both;
+    position: absolute;
+    border-bottom-right-radius: 5px;
+    transform: skewX(30deg);
+    left: 0;
+    content: "";
+    transform: skewX(30deg);
+    border-bottom-left-radius: 5px;
+    height: 35px;
+}
+
+.container, .floar .lap {
+    width: 100%;
+    max-width: 1201px;
+    margin: 0 auto;
+}
+
+    /* Pages */
+
+#pages {
+    float: left;
+    margin: 6px 0;
+    font-size: 12px;
+    position: relative;
+    margin-left: 18px;
+}
+
+#pages li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+header #pages li a:hover, header #pages li.selected a {
+    color: #ffffff!important;
+    background: -webkit-linear-gradient(to right,#0081fa,#02e2f0);
+    background: -o-linear-gradient(to right,#0081fa,#02e2f0);
+    background: -moz-linear-gradient(to right,#0081fa,#02e2f0);
+    background: linear-gradient(to right,#0081fa,#02e2f0);
+}
+
+header #pages li a {
+    -webkit-transition: none;
+    -o-transition: none;
+    -moz-transition: none;
+    transition: none;
+    background: #00499b;
+    margin-right: 7px;
+    font-size: 12px;
+    display: block;
+    line-height: normal;
+    padding: 0 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 2em;
+}
+
+    /* Social Media */
+/* Social Colors */
+.social .fa-facebook{background-color:#3b5998}
+.social .fa-twitter{background-color:#1da1f2}
+.social .fa-vk{background-color:#2a5885}
+.social .fa-rss{background-color:#f26522}
+.social .fa-pinterest{background-color:#cc2127}
+.social .fa-linkedin{background-color:#0976b4}
+.social .fa-wordpress{background-color:#00769d}
+.social .fa-github{background-color:#000000}
+.social .fa-youtube{background-color:#e52d27}
+.social .fa-quora{background-color:#a82400}
+.social .fa-spotify{background-color:#1ed760}
+.social .fa-snapchat{background-color:#f5d602}
+.social .fa-instagram{background-color:#7c38af;
+     background:radial-gradient(circle at 0 130%, #fdf497 0%, #fdf497 5%,
+     #fd5949 45%,#d6249f 60%,#285AEB 90%)}
+.social .fa-behance{background-color:#009fff}
+.social .fa-whatsapp{background-color:#189d0e}
+.social .fa-soundcloud{background-color:#FF5419}
+.social .fa-tumblr{background-color:#3e5a70}
+.social .fa-telegram{background-color:#32AEE1}
+.social .fa-paypal{background-color:#193685}
+.social .fa-reddit{background-color:#ff4500}
+.social .fa-vk{background-color:#45668e}
+.social .fa-website{background-color:#444444}
+.fa-website:before{content:"\f0ac"}
+
+        /* Social Animation */
+@-webkit-keyframes abdelmoubine_Icon_SocialMedia{
+    50%{-webkit-transform:scale(0.7);transform:scale(0.7)}
+    100%{-webkit-transform:scale(1.5);transform:cale(1.5)}
+}
+
+@-moz-keyframes abdelmoubine_Icon_SocialMedia{
+    50%{-webkit-transform:scale(0.7);-moz-transform:scale(0.7);transform:scale(0.7)}
+    100%{-webkit-transform:scale(1.5);-moz-transform:cale(1.5);transform:cale(1.5)}
+}
+
+@-o-keyframes abdelmoubine_Icon_SocialMedia{
+    50%{-webkit-transform:scale(0.7);-o-transform:scale(0.7);transform:scale(0.7)}
+    100%{-webkit-transform:scale(1.5);-o-transform:cale(1.5);transform:cale(1.5)}
+    }
+
+@keyframes abdelmoubine_Icon_SocialMedia{
+    50%{-webkit-transform:scale(0.7);-moz-transform:scale(0.7);-o-transform:scale(0.7);transform:scale(0.7)}
+    100%{-webkit-transform:scale(1.5);-moz-transform:cale(1.5);-o-transform:cale(1.5);transform:cale(1.5)}
+}
+
+.social-static.social li:hover {
+    -webkit-animation:abdelmoubine_Icon_SocialMedia .3s ease-in-out;
+    -moz-animation:abdelmoubine_Icon_SocialMedia .3s ease-in-out;
+    -o-animation:abdelmoubine_Icon_SocialMedia .3s ease-in-out;
+    animation:abdelmoubine_Icon_SocialMedia .3s ease-in-out
+}
+
+#top-social-L {
+    margin-right: 0;
+    float: right;
+    z-index: 99999;
+    position: relative;
+    margin-top: 4px;
+}
+
+.social-static .social {
+    display: block;
+    overflow: hidden;
+}
+
+#top-social-L li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+#top-social-L li a {
+    display: block;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.floar a {
+    color: #ffffff;
+    font-size: 12px;
+}
+/* Header Bot */
+
+.par-bottm {
+    display: block;
+    clear: both;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: relative;
+}
+
+.TheA2M, .floar .lap {
+    width: 100%;
+    max-width: 1201px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    display: block;
+    position: relative;
+}
+
+div#logo {
+    font-size: 1.5em;
+    top: -25px;
+    z-index: 9;
+    width: 250px;
+    height: 70px;
+
+}
+
+div#header-inner {
+    width: 250px;
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+img#Header1_headerimg {
+    max-height: 100%;
+    margin: 0 auto;
+    top: -16px;
+}
+
+/* ------ Search Box ------ */
+header .par-bottm #search{height:100%;position:absolute;right:20px;min-width:230px}
+header .par-bottm .search{position:relative;display:flex;justify-content:flex-end;align-items:center;height:30px;margin-top:5px}
+header .par-bottm .search label{width:0px;overflow:hidden;height:100%;display:flex;flex-wrap:wrap}
+header .par-bottm .search input{z-index:1;font-family:inherit;-webkit-border-radius:0 1px 1px 0;-moz-border-radius:0 1px 1px 0;border-radius:0 1px 1px 0;height:100%;width:100%;background-color:#595959;color:#ffffff;font-size:12px;border:none;outline:none;padding:0 15px}
+header .par-bottm .search button{color:#ffffff;background:-webkit-linear-gradient(to right,#0081fa,#02e2f0);background:-o-linear-gradient(to right,#0081fa,#02e2f0);background:-moz-linear-gradient(to right,#0081fa,#02e2f0);background:linear-gradient(to right,#0081fa,#02e2f0);display:block;width:30px;height:30px;line-height:29px;font-size:18px;text-align:center;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer;flex-shrink:0;position:relative;border:none}
+header .search.open-search label{width:100%}
+
+nav.nav-par {
+    float: right;
+    width: calc((100% - 320px) /1)!important;
+    position: relative;
+    top: 0;
+}
+
+div#menu {
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+nav.nav-par ul li {
+    margin-right: 15px;
+    margin-left: 0;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav.nav-par ul li a {
+    font: normal 400 18px 'Segoe UI';
+    color: #000000;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+}
+
+.template, .floar .lap {
+    width: 100%;
+    max-width: 1201px;
+    margin: 0 auto;
+}
+
+.bocker {
+    overflow: hidden;
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+.r-r {
+    float: left;
+    width: calc((100% - 320px - 15px) / 1);
+}
+.r-r {
+    vertical-align: top;
+}
+
+.site .widget {
+    box-shadow: 0 6px 18px 0 rgb(9 32 76 / 4%);
+    display: block;
+    background: #fff;
+    clear: both;
+    border-radius: 27px;
+    padding: 20px;
+    overflow: hidden;
+    margin: 0 0 15px;
+}
+
+.headline {
+    display: block;
+    clear: both;
+    margin-bottom: 15px;
+    position: relative;
+    height: 35px;
+}
+
+.headline:before {
+    content: "";
+    background: #f0f0f0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.headline .title, .Followers h2.title {
+    display: inline-block;
+    padding: 0 20px;
+    background: #4285f4;
+    color: #ffffff;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    border-radius: 27px;
+    z-index: 8;
+    position: relative;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    background: #fff;
+    height: 8px;
+    width: 5px;
+    top: 40%;
+}
+
+a.Lapel-Link {
+    background: #4285f4;
+    color: #ffffff;
+    float: right;
+    padding: 0 20px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 27px;
+    z-index: 8;
+    position: relative;
+}
+
+.Sp-Normal .moreLink:before, .post-outer .moreLink:before, a.Lapel-Link:before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    color: #000;
+    padding: 5px;
+    display: block;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+
+a.Lapel-Link:after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    background: #fff;
+    height: 8px;
+    width: 5px;
+    top: 40%;
+}
+
+.post-outer:last-of-type, .Sp-Normal .posts:last-of-type {
+    padding-bottom: 0!important;
+    border-bottom: 0!important;
+    margin-bottom: 0!important;
+}
+
+.post-outer, .Sp-Normal .posts {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.post-outer .thumb, .Sp-Normal .posts .thumb {
+    width: 300px;
+    height: 180px;
+}
+.thumb {
+    position: relative;
+    z-index: 1;
+    min-height: 80px;
+}
+.thumb {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 15px;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+a.thumb.not-pl:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.15) 6%,rgba(0,0,0,0.68) 100%);
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 8;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.thumb img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Sp-Normal .posts a.thumb.not-pl:after, .post-outer a.thumb.not-pl:after, .widget.FeaturedPost a.item-thumbnail.thumb.not-pl:after {
+    width: 28px;
+    height: 28px;
+    top: 43%;
+    left: 45%;
+}
+a.thumb.not-pl:after {
+    content: "";
+    z-index: 9;
+    position: absolute;
+    display: block;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.post-home, .Sp-Normal .posts .cont {
+    width: calc((100% - 315px) / 1);
+    float: left;
+}
+
+.post-outer .posts-titles, .Sp-Normal .posts .rnav-title {
+    height: inherit;
+    clear: both;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.post-outer .posts-titles a, .Sp-Normal .posts .rnav-title a {
+    line-height: 1.5em;
+    margin-bottom: 7px;
+    display: block;
+    max-height: 4.6em;
+    font-size: 16px;
+    color: #575757;
+}
+
+.post-outer .items, .Sp-Normal .posts .items {
+    display: block;
+    font-size: 11px;
+    color: #7f7f7f;
+}
+.post-outer .items, .Sp-Normal .posts .items {
+    display: block;
+    clear: both;
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 11px;
+    color: #7f7f7f;
+}
+
+.post-outer .items a, .post-outer .items span, .Sp-Normal .posts .items a, .Sp-Normal .posts .items span {
+    font-size: 12px;
+    display: inline-block;
+    color: #7f7f7f;
+    margin-right: 3px;
+}
+
+.post-outer .Short_content, .Sp-Normal .posts .Short_content {
+    color: #7f7f7f;
+    line-height: 1.7em;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.post-outer .moreLink, .Sp-Normal .posts .moreLink {
+    display: inline-block !important;
+    margin-top: 5px;
+    position: relative;
+    font-size: 14px;
+    background: #4285f4;
+    color: #ffffff;
+    padding: 7px 15px 7px 15px;
+    border-radius: 2px;
+}
+
+.Sp-Normal .moreLink:before, .post-outer .moreLink:before, a.Lapel-Link:before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    color: #000;
+    padding: 5px;
+    display: block;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+
+div#AddOns {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.ltr #sidepar-wid {
+    left: auto !important;
+    right: 0 !important;
+}
+
+#sidepar-wid {
+    transition: none !important;
+    width: 320px;
+    float: right;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.PopularPosts article.post:last-of-type {
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+    border-bottom: 0!important;
+}
+
+.PopularPosts article.post {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.PopularPosts h3.post-title {
+    width: calc((100% - 100px) / 1);
+    float: right;
+    overflow: hidden;
+    margin-top: 1px;
+    text-align: left;
+    max-height: 4em;
+}
+
+.PopularPosts h3.post-title a {
+    font-size: 13px;
+    color: #575757;
+}
+
+.PopularPosts a.item-thumbnail.thumb {
+    width: 90px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.Sp-posts5 .posts:not(.postnum0) a.thumb.not-pl:after, .Sp-posts4 .posts:not(.postnum0) a.thumb.not-pl:after, .Sp-posts3 .posts a.thumb.not-pl:after, .Sp-3colList .posts a.thumb.not-pl:after, .PopularPosts a.item-thumbnail.thumb.not-pl:after {
+    width: 20px;
+    height: 20px;
+    top: 40%;
+    left: 40%;
+}
+
+.bottom-footer {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    padding: 10px 0;
+    box-shadow: 0 -1px 25px -16px #000;
+    margin-top: 0;
+    background: #00162e;
+}
+
+footer .TheA2M {
+    display: block;
+    overflow: hidden;
+}
+.TheA2M, .floar .lap {
+    width: 100%;
+    max-width: 1201px;
+    margin: 0 auto;
+}
+
+.abdelmoubine {
+    min-height: 32px;
+    font-size: 13px;
+    float: left;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+body.ltr .abdelmoubine a[title="Abdel Moubine Missaoui"] {
+    margin-right: 5px;
+}
+
+.abdelmoubine a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #4285f4;
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+
+.abdelmoubine span {
+    font-size: 13px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.zn-tmp {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 4px 0 0;
+}
+
+.zn-tmp, .zn-tmp a {
+    position: relative;
+    display: inline-block!important;
+    vertical-align: middle;
+}
+
+.shmal {
+    float: right;
+    font-size: 13px;
+    margin-top: 5px;
+    color: wheat;
+}
+
+.social-static.social {
+    display: block;
+    overflow: hidden;
+}
+
+.shmal .social-static.social li:first-of-type {
+    margin-left: 0;
+}
+
+.shmal .social-static.social li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.shmal .social-static.social li a {
+    display: block;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+footer .social-static.social a[title='twitter'], aside .social-static.social a[title='twitter'], .mop-icon .social-static.social a[title='twitter'] {background: #1da1f2;}
+footer .social-static.social a[title='reddit'], aside .social-static.social a[title='reddit'], .mop-icon .social-static.social a[title='reddit'] {background: #ff6933;}
+footer .social-static.social a[title='whatsapp'], aside .social-static.social a[title='whatsapp'], .mop-icon .social-static.social a[title='whatsapp'] {background: #128C7E;}
+footer .social-static.social a[title='facebook'], aside .social-static.social a[title='facebook'], .mop-icon .social-static.social a[title='facebook'] {background: #4267b2;}
+footer .social-static.social a[title='sitemap'], aside .social-static.social a[title='sitemap'], .mop-icon .social-static.social a[title='sitemap'] {background: #4285f4;}
+footer .social-static.social a[title='pinterest'], aside .social-static.social a[title='pinterest'], .mop-icon .social-static.social a[title='pinterest'] {background-color:#cc2127}
+footer .social-static.social a[title='linkedin'], aside .social-static.social a[title='linkedin'], .mop-icon .social-static.social a[title='linkedin'] {background-color:#0976b4}
+footer .social-static.social a[title='youtube'], aside .social-static.social a[title='youtube'], .mop-icon .social-static.social a[title='youtube'] {background-color:#e52d27}
+footer .social-static.social a[title='spotify'], aside .social-static.social a[title='spotify'], .mop-icon .social-static.social a[title='spotify'] {background-color:#1ed760}
+footer .social-static.social a[title='snapchat'], aside .social-static.social a[title='snapchat'], .mop-icon .social-static.social a[title='snapchat'] {background-color:#f5d602}
+
+footer .social-static.social a[title='wordpress'], aside .social-static.social a[title='wordpress'], .mop-icon .social-static.social a[title='wordpress'] {background-color:#207297}
+footer .social-static.social a[title='blogger'], aside .social-static.social a[title='blogger'], .mop-icon .social-static.social a[title='blogger'] {background-color:#e96734}
+footer .social-static.social a[title='instagram'], aside .social-static.social a[title='instagram'], .mop-icon .social-static.social a[title='instagram'] {background-color:#7c38af;background:radial-gradient(circle at 0 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)}
+footer .social-static.social a[title='behance'], aside .social-static.social a[title='behance'], .mop-icon .social-static.social a[title='behance'] {background-color:#009fff}
+footer .social-static.social a[title='soundcloud'], aside .social-static.social a[title='soundcloud'], .mop-icon .social-static.social a[title='soundcloud'] {background-color:#FF5419}
+footer .social-static.social a[title='vk'], aside .social-static.social a[title='vk'], .mop-icon .social-static.social a[title='vk'] {background-color:#2a5885}
+footer .social-static.social a[title='github'], aside .social-static.social a[title='github'], .mop-icon .social-static.social a[title='github'] {background-color:#000000}
+footer .social-static.social a[title='messenger'], aside .social-static.social a[title='messenger'], .mop-icon .social-static.social a[title='messenger'] {background-color:#0084ff}
+footer .social-static.social a[title='google-play'], aside .social-static.social a[title='google-play'], .mop-icon .social-static.social a[title='google-play'] {background-color:#3d9dab}
